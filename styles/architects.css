@@ -41,12 +41,12 @@
     font-weight: 700;
 }
 main{
-    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
 main > section{
-    margin-top: 130px;
+    margin-top: 10px;
 }
 /* navbar style */
 .navbar{
@@ -68,53 +68,56 @@ main > section{
 
 }
 .navbar, .banner{
-    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 50px;
 
 }
 
 /* banner style */
 .banner-content{
-    max-width: 850px;
+    width: 850px;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 .banner-title{
     font-weight: 700;
     font-size: 4rem;
 }
 .banner-img{
-    width: 100%;
-    max-width: 950px;
-    padding: 45px 240px;
+    width: 950px;
+    padding: 45px 150px;
     border-radius: 8px;
 }
 /* team and feature related style */
 .teams{
     display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    gap: 250px;
-    padding: 0 auto;
-    
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
     
 }
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    height: 342px;
-    width: 342px;
+    gap: 20px;
+    width: 50%;
     
 }
-.our-features{
-    margin-left: 130px;
-    max-width: 530px;
-    /* display: inline;
-    justify-content: center;
-    align-items: center; */
+.team-img-container img{
+    height: 300px;
+}
+#our-features{
+    margin-top: 190px;
+    width: 530px;
+    height: 400px;
 
+}
+#our-features > button{
+    text-align: left;
+    width: 200px;
+    text-align: center;
 }
 
 #quick-list{
@@ -124,7 +127,7 @@ main > section{
 /* features section related style */
 .features{
     gap: 140px;
-    padding-top: 350px;
+    margin: 80px 30px;
 }
 
 #feature-section-title{
@@ -161,6 +164,9 @@ main > section{
 }
 
 /* some facts related style */
+.some-facts{
+    padding: 0px 40px;
+}
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -173,6 +179,7 @@ main > section{
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding: 0 auto;
 }
 .fact-number{
     font-size: 2.8rem;
@@ -189,7 +196,7 @@ main > section{
 }
 /* sponsor related style */
 .sponsor-info{
-    max-width: 540px;
+    width: 100%;
     margin: 50px auto;
     text-align: center;
 }
@@ -199,6 +206,16 @@ main > section{
 }
 .sponsor-companies img{
     filter: grayscale(100%);
+    padding: 20px 20px;
+}
+/* footer style */
+footer{
+    background-color: #FFF4E7;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    
 }
 
 /* responsive media query */
@@ -226,9 +243,15 @@ main > section{
     .our-features{
         margin-left: 20px;
     }
+    .team-img-container{
+        margin: 0 auto;
+    }
     #experience-badge{
         margin-top: 20px;
         margin-left: 20px;
+    }
+    .banner-img{
+        padding:  0;
     }
 }
 
